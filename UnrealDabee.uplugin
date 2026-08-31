@@ -1,0 +1,41 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Unreal Dabee",
+	"Description": "Box3D plugin for Unreal",
+	"Category": "Physics",
+	"CreatedBy": "LiamLeo",
+	"CreatedByURL": "https://github.com/LiamLeoDev/UnrealDabee",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "https://discord.gg/FyPv32WmHE",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Plugins": [
+	],
+	"Modules": [
+		{
+			"Name": "Box3DWrapper",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "Box3DEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
+		},
+		{
+			"Name": "Box3DRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "Box3DGameplay",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
