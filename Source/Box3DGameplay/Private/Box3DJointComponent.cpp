@@ -148,8 +148,8 @@ bool UBox3DJointComponent::PreaperJointDef(const FString& FirstComponentName, co
 	UBox3DStaticMeshComponent* SecondComponent = FindComponentByName(SecondComponentName);
 	B3_ENSURE_MSG(FirstComponent, TEXT("FirstComponent is not found"));
 	B3_ENSURE_MSG(SecondComponent, TEXT("SecondComponent is not found"));
-	if(FirstComponent && SecondComponent){
-		FB3JointHandle JointHandle;
+	if(FirstComponent && SecondComponent)
+	{
 		OutJointDef.BodyHandleA = FirstComponent->GetRigidBodyHandle();
 		OutJointDef.BodyHandleB = SecondComponent->GetRigidBodyHandle();
 		return true;

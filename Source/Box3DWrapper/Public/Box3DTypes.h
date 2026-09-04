@@ -556,7 +556,7 @@ struct BOX3DWRAPPER_API FB3BodyDef
 	/// can be larger than 1 but the damping effect becomes sensitive to the
 	/// time step when the damping parameter is large.
 	/// Generally linear damping is undesirable because it makes objects move slowly
-	/// as if they are floating.    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, Category="𝘽𝙊𝙓3𝘿|RigidBody")
     float LinearDamping = 0.0f;
 	
 	/// Angular damping is used to reduce the angular velocity. The damping parameter
